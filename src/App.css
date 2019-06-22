@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font: 1em TimesNewRoman;
+  border: 1in;
 }
 
 .App-logo {
@@ -9,14 +11,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: cleft;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -30,4 +32,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App-table{
+  
 }
