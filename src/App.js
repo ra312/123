@@ -2,7 +2,8 @@ import React from 'react';
 
 import rauan from './rauan.jpeg';
 import './App.css';
-import Helmet from 'react-helmet'
+import './nav.css';
+import {Helmet} from 'react-helmet'
 
 class Affiliation extends React.Component{
   render()
@@ -37,12 +38,11 @@ function App() {
   return (
     <div className="App">
         <Helmet>
-          <title>Turbo Todo</title>
-          <meta name="description" content="Todos on steroid!" />
-          <meta name="theme-color" content="#008f68" />
-          <body class="dark" />
+          <meta charSet="utf-8" />
+          <title>My Title</title>
+          <link rel="canonical" href="http://mysite.com/example" />  
         </Helmet>
-          
+        <h1>Dr. Rauan Akylzhanov </h1> 
         {/* <div className="App-header">
 
         <h3>Dr. Rauan Akylzhanov</h3>
@@ -61,7 +61,19 @@ function App() {
         </table>
         </div>
       */}
-      <p> 
+<body>
+<header>
+<nav>
+    <ul>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Teaching</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+	</header>
+<p> 
 I obtained my <a  href="./portfolio/thesis_akylzhanov.pdf">PhD</a> in Pure Mathematics from Imperial College London.
 Currently, I am a research associate in Geometry and Analysis group at Queen Mary University of London.
 
@@ -102,7 +114,7 @@ Together with Shahn Majid,
 I am exploring the generating functional and n-point correlation
 functions arising from 0+1 quantum field theory on the lattice line.
 </p>
-
+</body>
     </div>
   );
 }
