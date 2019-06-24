@@ -5,33 +5,6 @@ import './App.css';
 import './nav.css';
 import {Helmet} from 'react-helmet'
 
-class Affiliation extends React.Component{
-  render()
-  {
-    return (
-    <form>
-        <li>
-            <a href="https://scholar.google.com/citations?user=BAxsRYkAAAAJ&hl=en" class="active">
-         <div class="col-2 center ai-case">
-              <i class="ai ai-google-scholar ai-4x"></i>
-              google-scholar
-            </div>
-    
-        </a>
-        </li>
-    
-        <li>
-            <a href="http://arxiv.org/a/akylzhanov_r_1" class="active">
-                <div class="col-2 center ai-case">
-                    <i class="ai ai-arxiv ai-4x"></i>
-                        arxiv
-                </div>
-            </a>
-        </li>
-      </form>
-    )
-  }
-}
 
 var Latex = require('react-latex');
 function App() {
@@ -39,11 +12,12 @@ function App() {
     <div className="App">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>My Title</title>
+          <title>Rauan Akylzhanov</title>
           <link href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" rel="stylesheet"/>
           <link rel="canonical" href="http://mysite.com/example" />  
         </Helmet>
         <h1>Dr. Rauan Akylzhanov </h1> 
+        <img src={rauan} width="160" height="200" />    
         {/* <div className="App-header">
 
         <h3>Dr. Rauan Akylzhanov</h3>
@@ -91,8 +65,8 @@ into the study of dispersive estimates for wave, Schrödinger, Klein-Gordon
 equations on different backgrounds. In my current working paper, I obtained
 a version of Hörmander-Mihlin   <Latex> $L^p$</Latex>-multiplier theorems on semi-finite von
 Neumann algebras. The project is supported by the EPSRC grant EP/R003025/2.
-I expect 4 preprints in the coming months from different <a href="research.html">projects</a>.
 </p>
+
 <p>
 This work builds on my dissertation, "<Latex>$L^p$-$L^q$</Latex> Fourier multipliers on locally
 compact groups,” which used von Neumann algebra theory to obtain extensions
