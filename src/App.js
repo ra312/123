@@ -33,13 +33,14 @@ class Affiliation extends React.Component{
   }
 }
 
-
+var Latex = require('react-latex');
 function App() {
   return (
     <div className="App">
         <Helmet>
           <meta charSet="utf-8" />
           <title>My Title</title>
+          <link href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" rel="stylesheet"/>
           <link rel="canonical" href="http://mysite.com/example" />  
         </Helmet>
         <h1>Dr. Rauan Akylzhanov </h1> 
@@ -88,18 +89,18 @@ operators starting from a fixed noncommutative differential geometry.
 My current project aims at bringing modern techniques of von Neumann algebras
 into the study of dispersive estimates for wave, Schrödinger, Klein-Gordon
 equations on different backgrounds. In my current working paper, I obtained
-a version of Hörmander-Mihlin $L^p$-multiplier theorems on semi-finite von
+a version of Hörmander-Mihlin   <Latex> $L^p$</Latex>-multiplier theorems on semi-finite von
 Neumann algebras. The project is supported by the EPSRC grant EP/R003025/2.
 I expect 4 preprints in the coming months from different <a href="research.html">projects</a>.
 </p>
 <p>
-This work builds on my dissertation, “$L^p$-$L^q$ Fourier multipliers on locally
+This work builds on my dissertation, "<Latex>$L^p$-$L^q$</Latex> Fourier multipliers on locally
 compact groups,” which used von Neumann algebra theory to obtain extensions
 of numerous theorems of Fourier analysis to general unimodular and separable
-topological groups. Specifically, it analyses $L^p$-$L^q$ Fourier multipliers
+topological groups. Specifically, it analyses <Latex>$L^p$-$L^q$</Latex> Fourier multipliers
 considering them as linear operators affiliated with the group von Neumann
 algebra. I use the theory of noncommutative integration to establish
-the sufficient condition for the $L^p$-$L^q$ boundedness in terms of the
+the sufficient condition for the <Latex>$L^p$-$L^q$</Latex> boundedness in terms of the
 noncommutative Lorenz spaces on the von Neumann algebras.
 I discovered that the norm of the operator is controlled by the decay
 rate of the semi-finite trace on the spectral projections and conclude
