@@ -1,52 +1,11 @@
-import React from 'react';
-
-import rauan from './rauan.jpeg';
-import './App.css';
-import './nav.css';
-import {Helmet} from 'react-helmet'
-
-
+import React, { Component } from "react";
 var Latex = require('react-latex');
-function abstract()
-{
-  return (
-    <div>
-    I obtained my <a  href="./portfolio/thesis_akylzhanov.pdf">PhD</a> in Pure Mathematics from Imperial College London.
-    Currently, I am a research associate in Geometry and Analysis group at Queen Mary University of London.
-
-    Before that, I was a math postdoc in Pure Analysis and PDE group at Imperial College London.
-
-    Broadly speaking, in the interface between (harmonic) analysis and operator
-    algebra theory. The long-term aim is to build theory of partial differential
-    operators starting from a fixed noncommutative differential geometry.
-    </div>
-  )
-}
-function App() {
-  return (
-    <div className="App">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>Rauan Akylzhanov</title>
-          <link href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" rel="stylesheet"/>
-          <link rel="canonical" href="http://mysite.com/example" />  
-        </Helmet>
-        <h1>Dr. Rauan Akylzhanov </h1> 
-        <img src={rauan} width="160" height="200" />    
-    <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">Teaching</a></li>
-          <li><a href="#">Publications</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-	  </header>
-    
-    <p> 
+class Contact extends Component {
+  render() {
+    return (
+      <div>
+        <h2>GOT QUESTIONS?</h2>
+        <p> 
     I obtained my <a  href="./portfolio/thesis_akylzhanov.pdf">PhD</a> in Pure Mathematics from Imperial College London.
     Currently, I am a research associate in Geometry and Analysis group at Queen Mary University of London.
 
@@ -66,7 +25,7 @@ function App() {
     </p>
 
     <p>
-    This work builds on my dissertation, "<Latex>$L^p$-$L^q$</Latex> Fourier multipliers on locally
+    This work builds on my dissertation, <Latex>$L^p-L^q$</Latex> Fourier multipliers on locally
     compact groups,” which used von Neumann algebra theory to obtain extensions
     of numerous theorems of Fourier analysis to general unimodular and separable
     topological groups. Specifically, it analyses <Latex>$L^p$-$L^q$</Latex> Fourier multipliers
@@ -87,10 +46,10 @@ function App() {
   I am exploring the generating functional and n-point correlation
   functions arising from 0+1 quantum field theory on the lattice line.
 </p>
-</body>
-    </div>
-  );
+   
+      </div>
+    );
+  }
 }
-
-export default App;
-
+ 
+export default Contact;
