@@ -1,13 +1,21 @@
 import React, { Component } from "react";
 import {
   Route,
+  Link,
+  Redirect,
+  withRouter,
   NavLink,
   HashRouter
 } from "react-router-dom";
+
 import Home from "./Home";
 import Research from "./Research";
 import Contact from "./Contact";
 import About from "./About";
+
+
+
+
 class Main extends Component {
   render() {
     return (
