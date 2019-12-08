@@ -6,7 +6,7 @@ class About extends Component {
       // <MathJax.Provider>
       <div>
          <p>
-        I obtained my <a  href="./portfolio/thesis_akylzhanov.pdf">PhD</a> in Pure Mathematics from Imperial College London.
+        I obtained my <a  href="https://ra312.github.io/portfolio/thesis_akylzhanov.pdf">PhD</a> in Pure Mathematics from Imperial College London.
         Currently, I am a research associate in Geometry and Analysis group at Queen Mary University of London.
 
         Before that, I was a math postdoc in Pure Analysis and PDE group at Imperial College London.
@@ -20,7 +20,7 @@ class About extends Component {
         My current project aims at bringing modern techniques of von Neumann algebras
         into the study of dispersive estimates for wave, Schrödinger, Klein-Gordon
         equations on different backgrounds. In my current working paper, I obtained
-        a version of Hörmander-Mihlin   
+        a version of Hörmander-Mihlin   
 
         {/* <MathJax.Node inline formula={'a = b'} /> */}
         -multiplier theorems on semi-finite von
