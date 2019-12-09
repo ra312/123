@@ -34,6 +34,7 @@ class Main extends Component {
             <Route path="/contact" component={Contact}/>
             <Route path="/about" component={About}/>
           </div>
+			   I love complex problems with elegant solutions and honest integral opportunistic  people with big ambitions.
         </div>
       </HashRouter>
     );
